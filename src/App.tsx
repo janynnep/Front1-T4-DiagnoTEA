@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
-import Form from './Form';
+import Form from './components/Form';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -25,7 +25,7 @@ const App = () => {
     <div className={darkMode ? 'dark-mode' : ''}>
       <nav className={`navbar navbar-expand-lg fixed-top ${darkMode ? 'navbar-dark bg-dark' : 'navbar-light bg-light'}`} >
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">DiagnoTEA</a>
+          <a className="navbar-brand" href="#"><img src="src/img/favicon.ico" className="img-fluid img-quadrada me-1 w-25" />DiagnoTEA</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -127,6 +127,7 @@ const App = () => {
 
       <section id="form" className="container pt-5">
         <h2 className="mt-3">Questionário AQ-10</h2>
+        <div className="mt-3"><p>O questionário AQ-10 (<i>Autism Spectrum Quotient</i>) é composto por 10 perguntas breves e projetado para ajudar na avaliação preliminar do Transtorno do Espectro Autista (TEA). É utilizado por profissionais da saúde antes da realização exames específicos para o diagnóstico de TEA.</p></div>
         <div className="card mt-3"> {/*alterar para container depois */}
           <Form />            
         </div>       
