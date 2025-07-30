@@ -33,7 +33,7 @@ const App = () => {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item"><a className="nav-link" href="#about">Sobre o Projeto</a></li>
               <li className="nav-item"><a className="nav-link" href="#objectives">Objetivos</a></li>
-              <li className="nav-item"><a className="nav-link" href="#form">Questinário AQ-10</a></li>
+              <li className="nav-item"><a className="nav-link" href="#form">Questionário AQ-10</a></li>
               <li className="nav-item"><a className="nav-link" href="#schedule">Cronograma</a></li>
               <li className="nav-item"><a className="nav-link" href="#team">Equipe</a></li>
               <li className="nav-item">
