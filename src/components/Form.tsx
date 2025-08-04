@@ -16,7 +16,7 @@ const questions = [
   "9. Acho que é fácil perceber o que alguém está a pensar ou a sentir apenas olhando para o seu rosto.",
   "10. Acho difícil entender as intenções das pessoas."
 ];
-
+ 
 const options = [
   "Discordo totalmente",
   "Discordo",

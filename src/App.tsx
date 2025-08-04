@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './App.css';
 import Form from './components/Form';
+import Institutions from './components/Instituitions';
 
 const App = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,6 +35,7 @@ const App = () => {
               <li className="nav-item"><a className="nav-link" href="#about">Sobre o Projeto</a></li>
               <li className="nav-item"><a className="nav-link" href="#objectives">Objetivos</a></li>
               <li className="nav-item"><a className="nav-link" href="#form">Questionário AQ-10</a></li>
+              <li className="nav-item"><a className="nav-link" href="#institutions">Instituições</a></li>
               <li className="nav-item"><a className="nav-link" href="#schedule">Cronograma</a></li>
               <li className="nav-item"><a className="nav-link" href="#team">Equipe</a></li>
               <li className="nav-item">
@@ -128,9 +130,16 @@ const App = () => {
       <section id="form" className="container pt-5">
         <h2 className="mt-3">Questionário AQ-10</h2>
         <div className="mt-3"><p>O questionário AQ-10 (<i>Autism Spectrum Quotient</i>) é composto por 10 perguntas breves e projetado para ajudar na avaliação preliminar do Transtorno do Espectro Autista (TEA). É utilizado por profissionais da saúde antes da realização exames específicos para o diagnóstico de TEA.</p></div>
-        <div className="card mt-3"> {/*alterar para container depois */}
+        <div className="card border-0 mt-3"> 
           <Form />            
         </div>       
+      </section>
+
+      <section id="institutions" className="container pt-5">
+        <div className="card border-0 mt-3">
+        <h4 className="mb-4">Instituições e Associações de apoio ao TEA no Brasil </h4>
+        <Institutions />
+        </div>
       </section>
 
       <section id="schedule" className="container pt-5">
