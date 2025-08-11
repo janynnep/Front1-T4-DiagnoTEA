@@ -21,6 +21,8 @@ const App = () => {
       document.body.classList.add('light-mode');
     }
   }, [darkMode]);
+  
+  const [userScore, setUserScore] = useState("");
 
   return (
     <div className={darkMode ? 'dark-mode' : ''}>
@@ -45,8 +47,6 @@ const App = () => {
           </div>
         </div>
       </nav>
-   
-    
     
       <section id="about" className="container pt-5">
         <div className="container my-5">
@@ -131,7 +131,12 @@ const App = () => {
         <h2 className="mt-3">Questionário AQ-10</h2>
         <div className="mt-3"><p>O questionário AQ-10 (<i>Autism Spectrum Quotient</i>) é composto por 10 perguntas breves e projetado para ajudar na avaliação preliminar do Transtorno do Espectro Autista (TEA). É utilizado por profissionais da saúde antes da realização exames específicos para o diagnóstico de TEA.</p></div>
         <div className="card border-0 mt-3"> 
-          <Form />            
+          <Form onScoreCalculated={(_, message) => setUserScore(message)} />
+          {userScore && (
+            <div className="alert alert-info text-center mt-3">
+              {userScore}
+              </div>
+          )}            
         </div>       
       </section>
 
